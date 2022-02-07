@@ -1,4 +1,4 @@
-package com.unknowncoder.googleaccountintegration;
+package com.unknowncoder.googleaccountintegration.GoogleAccount;
 
 import static android.content.ContentValues.TAG;
 
@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
@@ -18,6 +17,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
+import com.unknowncoder.googleaccountintegration.R;
 
 public class StartActivity extends AppCompatActivity {
     private static final int RC_SIGN_IN = 101;
@@ -77,7 +77,7 @@ public class StartActivity extends AppCompatActivity {
                 editor.putString(constants.photo, String.valueOf(account.getPhotoUrl()));
                 editor.apply();
 
-                startActivity(new Intent(StartActivity.this,MainActivity.class));
+                startActivity(new Intent(StartActivity.this, MainActivity.class));
                 finish();
             }
 

@@ -1,4 +1,4 @@
-package com.unknowncoder.googleaccountintegration;
+package com.unknowncoder.googleaccountintegration.GoogleAccount;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,9 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.unknowncoder.googleaccountintegration.R;
 
 public class MainActivity extends AppCompatActivity {
     Button button;
@@ -62,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void SignOutUser() {
         editor.clear().apply();
-        startActivity(new Intent(MainActivity.this,StartActivity.class)
+        startActivity(new Intent(MainActivity.this, StartActivity.class)
             .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
         finish();
     }

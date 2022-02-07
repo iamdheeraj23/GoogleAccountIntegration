@@ -1,4 +1,4 @@
-package com.unknowncoder.googleaccountintegration;
+package com.unknowncoder.googleaccountintegration.GoogleAccount;
 
 public class Constants
 {

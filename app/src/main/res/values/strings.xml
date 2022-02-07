@@ -3,4 +3,5 @@
     <string name="google_n_integration">Google \n Integration</string>
     <string name="sign_in">Sign In</string>
     <string name="user_information">User Information</string>
+    <string name="phone_number">Phone Number</string>
 </resources>
