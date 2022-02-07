@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Google Account Integration</string>
+    <string name="google_n_integration">Google \n Integration</string>
+    <string name="sign_in">Sign In</string>
+    <string name="user_information">User Information</string>
+</resources>
